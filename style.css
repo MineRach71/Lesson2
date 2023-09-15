@@ -1,0 +1,40 @@
+/*This is main stylesheet*::after
+/*colour scheme*::after
+
+/*pink #D8546D
+/*yellow-orange #F19B24
+/*orange #F58931
+/*dark orange #F07444
+/*light red #EE5D5F
+
+/*purple #765CA5
+/*very dark purple #352957
+/*midnight blue #071572
+/*dark blue #0854F4
+/*blue #0F72F3
+
+/*beige #F6F2F
+/*white #FFFFFF*/
+
+
+.white{
+color:#F6F2FA
+}
+
+.lightOrange{
+  background-color:#F19B24;
+  
+}
+
+.lightRed{
+  background-color:#EE5D5F
+}
+
+.blue{
+  background-color:#0F72F3
+}
+
+.purple{
+  background-color:#765CA5;
+  color:#FFFFFF
+}
