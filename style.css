@@ -91,3 +91,11 @@ nav ul li:hover{
 nav ul li:hover a{
   color: #FFFFFF;
 }
+
+/*footer*/
+footer{
+  background-color: #5DE4EE;
+  color: 000000;
+  text-align: center;
+  padding: 3px;
+}
