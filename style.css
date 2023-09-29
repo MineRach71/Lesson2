@@ -1,71 +1,35 @@
 /*This is main stylesheet*::after
 /*colour scheme*::after
 
-/*pink #D8546D
-/*yellow-orange #F19B24
-/*orange #F58931
-/*dark orange #F07444
-/*light red #EE5D5F
-
-/*purple #765CA5
-/*very dark purple #352957
-/*midnight blue #071572
-/*dark blue #0854F4
-/*blue #0F72F3
-
-/*beige #F6F2F
-/*white #FFFFFF
-/*little dark white #F6F2FA*/
+ocean blue #0F72F3  rgb(15,114,243)
+dark purple #765CA5  rgb(100,92,165)
+light blue #5DE4EE  rgb(93,228,238)
+very dark blue #0B08BF  rbg(11,8,191)
+black #000  rgb(0,0,0)
+/*white #FFFFFF  rbg(255, 255, 255)
 
 
 
 /*  Main background colour  */
 .bg-blue{
-  background-color:#0F72F3;
+  background-color:rgba(15,114,243,1);
   padding: 20px;  /*squishs text in sections closer into middle of page while background colour stays same*/
   margin: 10px;
 }
 
 .bg-purple{
-  background-color:#765CA5;
-  color:#FFFFFF;
+  background-color:rgba(100,92,165,1);
+  color: #ffffff;
   padding: 20px;
-  margin: 10px; /* can make whole section smaller */;
-}
-
-
-/*  mygroup.html  */
-.Michal{
-  background-color: green;
-  padding: 20px;
-  margin: 10px;
-}
-
-.Rachel{
-  background-color: magenta;
-  padding: 20px;
-  margin: 10px;
-}
-
-.Themis{
-  background-color: black;
-  color: #FFFFFF;
-  padding: 20px;
-  margin: 10px;
-}
-
-.John{
-  background-color: royalblue;
-  padding: 20px;
-  margin: 10px;
+  margin: 10px; /* can make whole section smaller */
 }
 
 
 /*  Code for nav*/
 nav{
-  background-color: #5DE4EE;
-  border: 10px solid #0B08BF;  /*boreder around nav menu*/
-  color: #FFFFFF;
+  background-color: rgba(93,228,238,1);
+  border: 10px solid #0B08BF;  /*border around nav menu*/
+  color: #ffffff;
   display: block;
   overflow: hidden;
   width:100%;
@@ -85,17 +49,126 @@ nav ul li a{
 }
 
 nav ul li:hover{
-  background-color: #765CA5;
+  background-color: rgba(100,92,165,1);
 }
 
 nav ul li:hover a{
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 /*footer*/
 footer{
-  background-color: #5DE4EE;
-  color: 000000;
+  background-color: rgba(93,228,238,1);
+  color: #000;
   text-align: center;
   padding: 3px;
+}
+
+
+/************ This is style for tablet***********/
+
+@media screen and (max-width: 992px) {
+  .bg-blue{
+  background-color:rgba(15,114,243,0.5);
+  padding: 20px; 
+  margin: 10px;
+}
+
+.bg-purple{
+  background-color:rgba(100,92,165,0.5);
+  color: #ffffff;
+  padding: 20px;
+  margin: 10px; 
+}
+
+nav{
+  background-color: rgba(93,228,238,0.5);
+  border: 10px solid #0B08BF;  
+  color: #ffffff;
+  display: block;
+  overflow: hidden;
+  width:100%;
+}
+
+nav ul li{
+  display:inline-block;
+  list-style-type: none;
+}
+
+nav ul li a{
+  color: #000;
+  display: block;
+  line-height: 56px;
+  text-decoration: none;
+  padding: 10px;
+}
+
+nav ul li:hover{
+  background-color: rgba(100,92,165,0.5);
+}
+
+nav ul li:hover a{
+  color: #ffffff;
+}
+
+footer{
+  background-color: rgba(93,228,238,0.5);
+  color: #000;
+  text-align: center;
+  padding: 3px;
+}
+}
+
+/*********Style for mobile********/
+
+@media screen and (max-width: 600px) {
+  .bg-blue{
+  background-color:rgba(15,114,243,0.1);
+  padding: 20px; 
+  margin: 10px;
+}
+
+.bg-purple{
+  background-color:rgba(100,92,165,0.1);
+  color: #ffffff;
+  padding: 20px;
+  margin: 10px; 
+}
+
+nav{
+  background-color: rgba(93,228,238,0.1);
+  border: 10px solid #0B08BF;  
+  color: #ffffff;
+  display: block;
+  overflow: hidden;
+  width:100%;
+}
+
+nav ul li{
+  display:inline-block;
+  list-style-type: none;
+}
+
+nav ul li a{
+  color: #000;
+  display: block;
+  line-height: 56px;
+  text-decoration: none;
+  padding: 10px;
+}
+
+nav ul li:hover{
+  background-color: rgba(100,92,165,0.1);
+}
+
+nav ul li:hover a{
+  color: #ffffff;
+}
+
+footer{
+  background-color: rgba(93,228,238,0.1);
+  color: #000;
+  text-align: center;
+  padding: 3px;
+}
 }
